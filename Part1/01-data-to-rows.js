@@ -95,11 +95,13 @@ leaders = [biko, tambo, mandela, tutu, ngoyi, sobukwe, goldberg, first];
 // me</div>".                                                           //
 //////////////////////////////////////////////////////////////////////////
 
-
-
 function tagIt(content, tagName) {
-  return '';
+  let tagIt =  `<` + tagName + `>` + content + `</` + tagName + `>`;
+  return tagIt;
 }
+
+tagIt(`Header Words`, `h1`);
+
 
 
 
@@ -118,6 +120,8 @@ function tagIt(content, tagName) {
 function personRow (person) {
   return '';
 }
+
+personRow(biko);
 
 
 //////////////////////////////////////////////////////////////////////////
@@ -139,6 +143,8 @@ function personRow (person) {
 function peopleRows (people) {
   return '';
 }
+
+peopleRows(biko, tambo);
 
 
 // DO NOT MODIFY -- FOR AUTOMATED TESTING ONLY
