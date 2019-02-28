@@ -117,8 +117,11 @@ tagIt(`Header Words`, `h1`);
 /////////////////////////////////////////////////////////////////////////
 
 
+
 function personRow (person) {
-  return '';
+  let personRow =  `<tr><td>` + person.name + `</td><td>` + person.born + `</td><td>` + person.died + `</td><td>` + person.affiliations + `</td><td>` + person.quote + `</td></tr>`;
+  return personRow; // lowkey CLEARLY not but maybe something like tagIt(`Steve Biko`, `td`) + tagIt(`1946`, `td)
+  //but it's clearly not LOL
 }
 
 personRow(biko);
