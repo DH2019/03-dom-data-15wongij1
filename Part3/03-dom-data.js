@@ -3,14 +3,18 @@
 // this function should return a new string with a valid Wikipedia link of the form
 // "https://en.wikipedia.org/wiki/Some Name"
 function wikiUrl (name) {
-  return '';
+  let output = `https://en.wikipedia.org/wiki/`;
+  let wikiUrl = output + name;
+  return wikiUrl;
 }
+
 
 // given a name, this function should return, as a string, a valid link to a wiki page
 // of the form <a href='link url'>content</a>
 // the function `wikiURL` should make it easier to do this.
 function wikiLink (name) {
-  return '';
+  let wikiLink = $(`td.name`).html(`<a href=`,wikiUrl,`>`,name,`</a>`);
+  return wikiLink;
   // return $()
 }
 
