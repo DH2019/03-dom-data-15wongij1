@@ -37,7 +37,7 @@ function navBorderBottom () {
 
 // Problem 2c: Set the Text content of even-numbered boxes.
 function evenBoxesText () {
-  let evenBoxesText = $(`#box:nth-child(even)`).text(`I am a box`);
+  let evenBoxesText = $(`.box:nth-child(even)`).text(`I am a box`);
   // add the text content "I am a box" to all the even-numbered boxes in <article>
   // hint: use the ":nth-child()" pseudo-selector.
   return evenBoxesText;

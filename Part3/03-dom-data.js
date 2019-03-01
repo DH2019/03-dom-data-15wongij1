@@ -13,7 +13,8 @@ function wikiUrl (name) {
 // of the form <a href='link url'>content</a>
 // the function `wikiURL` should make it easier to do this.
 function wikiLink (name) {
-  let wikiLink = $(`td.name`).html(`<a href=`,wikiUrl,`>`,name,`</a>`);
+  let output = `<a href=` + wikiUrl `>` + name + `</a>`;
+  let wikiLink = output;
   return wikiLink;
   // return $()
 }
