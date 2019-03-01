@@ -21,8 +21,9 @@
 // Problem 2a: Turn the second box blue
 
 function secondBoxBlue () {
+  let secondBoxBlue = $(`#box2`).css(`background-color`,`blue`);
   // set the background-color property of box #box2 to "blue"
-  return '';
+  return secondBoxBlue;
 
 }
 

@@ -116,14 +116,12 @@ tagIt(`Header Words`, `h1`);
 // oppressor is the mind of the oppressed.</td></tr>"                  //
 /////////////////////////////////////////////////////////////////////////
 
-
-
 function personRow (person) {
-  let personRow =  `<tr><td>` + person.name + `</td><td>` + person.born + `</td><td>` + person.died + `</td><td>` + person.affiliations + `</td><td>` + person.quote + `</td></tr>`;
+  let personRow = tagIt(person.name,`td`) + tagIt(person.born, `td`) + tagIt(person.died,`td`)+ tagIt(person.affiliations,`td`) + tagIt(person.quote,`td`);
+  personRow = tagIt(personRow,`tr`);
   return personRow; // lowkey CLEARLY not but maybe something like tagIt(`Steve Biko`, `td`) + tagIt(`1946`, `td)
   //but it's clearly not LOL
 }
-
 personRow(biko);
 
 
@@ -144,7 +142,9 @@ personRow(biko);
 
 
 function peopleRows (people) {
-  return '';
+  for (i=0; i < people.length; i++) {
+  }
+  return peopleRows;
 }
 
 peopleRows(biko, tambo);
