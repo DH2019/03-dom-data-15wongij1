@@ -29,23 +29,25 @@ function secondBoxBlue () {
 
 // Problem 2b: give the nav bar a bottom border
 function navBorderBottom () {
+  let navBorderBottom = $(`nav`).css(`border-bottom`, `border: 10px solid rgba(180,40,40,0.8)`)
   // give the nav bar a border-bottom property of "10px solid rgba(180,40,40,0.8)"
-  return '';
+  return navBorderBottom;
   // return $()
 }
 
 // Problem 2c: Set the Text content of even-numbered boxes.
 function evenBoxesText () {
+  let evenBoxesText = $(`#box:nth-child(even)`).text(`I am a box`);
   // add the text content "I am a box" to all the even-numbered boxes in <article>
   // hint: use the ":nth-child()" pseudo-selector.
-  return '';
+  return evenBoxesText;
 }
-
 
 // Problem 2d: set the HTML content of odd-numbered boxes.
 function oddBoxesHtml () {
+  let oddBoxesHtml = $(`#box:nth-child(odd)`).html(`<div>I am an inner box</div>`);
   // set the HTML content of the even boxes to "<div> I am an inner box</div>"
-  return '';
+  return oddBoxesHtml;
 }
 
 
@@ -58,7 +60,7 @@ function oddBoxesHtml () {
 // s // "Your Name:"
 // use this trick to replace the phrase "Your Name" in the header with your actual name. 
 function modifyNav ()  {
-  return '';
+  return ``;
 }
 
 
