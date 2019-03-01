@@ -14,7 +14,6 @@ function wikiUrl (name) {
 // the function `wikiURL` should make it easier to do this.
 function wikiLink (name) {
   let output = `<a href="` + wikiUrl(name) + `">` + name + `</a>`;
-  // i don't understand how to retrieve the part that I'm missing-- unless there is something I'm doing wrong in the wikiUrl part
   let wikiLink = output;
   return wikiLink;
   // return $()
@@ -24,7 +23,8 @@ function wikiLink (name) {
 // set the element's HTML content to a wikiLink whose internal text content is the original
 // element's text content. 
 function wikifyElementHtml (element) {
-  return '';
+  let element = $(`td.name`).append(wikiLink(name));
+  return wikifyElementHtml;
 }
 
 // passed a class name or other selector, this function should iterate through all
