@@ -45,7 +45,7 @@ function evenBoxesText () {
 
 // Problem 2d: set the HTML content of odd-numbered boxes.
 function oddBoxesHtml () {
-  let oddBoxesHtml = $(`#box:nth-child(odd)`).html(`<div>I am an inner box</div>`);
+  let oddBoxesHtml = $(`.box:nth-child(odd)`).html(`<div> I am an inner box</div>`);
   // set the HTML content of the even boxes to "<div> I am an inner box</div>"
   return oddBoxesHtml;
 }
@@ -60,7 +60,10 @@ function oddBoxesHtml () {
 // s // "Your Name:"
 // use this trick to replace the phrase "Your Name" in the header with your actual name. 
 function modifyNav ()  {
-  return ``;
+  let s = `Ingrid Wong`;
+  s = s.replace(`Ingrid Wong`, `Your Name`);
+  let modifyNav = $(`nav h1`).html(`Ingrid Wong`);
+  return modifyNav;
 }
 
 
