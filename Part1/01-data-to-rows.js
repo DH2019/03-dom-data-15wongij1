@@ -118,9 +118,9 @@ tagIt(`Header Words`, `h1`);
 
 function personRow (person) {
   let personRow = tagIt(person.name,`td`) + tagIt(person.born, `td`) + tagIt(person.died,`td`)+ tagIt(person.affiliations,`td`) + tagIt(person.quote,`td`);
+  // PS: there must be a faster way to do this but I don't have enough time right now to fully figure it out! can i use a loop?
   personRow = tagIt(personRow,`tr`);
-  return personRow; // lowkey CLEARLY not but maybe something like tagIt(`Steve Biko`, `td`) + tagIt(`1946`, `td)
-  //but it's clearly not LOL
+  return personRow; 
 }
 personRow(biko);
 
