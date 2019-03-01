@@ -13,7 +13,8 @@ function wikiUrl (name) {
 // of the form <a href='link url'>content</a>
 // the function `wikiURL` should make it easier to do this.
 function wikiLink (name) {
-  let output = `<a href=` + wikiUrl `>` + name + `</a>`;
+  let output = `<a href="` + wikiUrl(name) + `">` + name + `</a>`;
+  // i don't understand how to retrieve the part that I'm missing-- unless there is something I'm doing wrong in the wikiUrl part
   let wikiLink = output;
   return wikiLink;
   // return $()

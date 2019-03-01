@@ -143,6 +143,7 @@ personRow(biko);
 
 function peopleRows (people) {
   for (i=0; i < people.length; i++) {
+    //NOT DONE YET !!
   }
   return peopleRows;
 }
