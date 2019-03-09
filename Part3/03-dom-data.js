@@ -23,18 +23,25 @@ function wikiLink (name) {
 // set the element's HTML content to a wikiLink whose internal text content is the original
 // element's text content. 
 function wikifyElementHtml (element) {
-  let element = $(`td.name`).append(wikiLink(name));
+  let wikifyElementHtml = $(element).html(wikiLink(element.textContent));
   return wikifyElementHtml;
 }
 
 // passed a class name or other selector, this function should iterate through all
 // the matching elements and wikify their text.  
 function wikifyClass (selector) {
-
+  let wiki = document.querySelectorAll(selector);
+  wiki.forEach(element=>{
+    wikifyElementHtml(element)
+  })
 }
 
 
 function wikifySelector(selector) {
+let wiki = document.querySelectorAll(selector);
+wiki.forEach(element=>{
+  wikifyElementHtml(element)
+})
 };
   
 

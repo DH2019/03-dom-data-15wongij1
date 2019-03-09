@@ -142,11 +142,12 @@ personRow(biko);
 
 
 function peopleRows (people) {
-  for (i=0; i < people.length; i++) {
-    //NOT DONE YET !!
+  output = ``;
+  for ( i=0; i < people.length; i++) {
+    output += personRow(people[i]) + `\n`; 
+    }
+  return tagIt(output, `table`);
   }
-  return peopleRows;
-}
 
 peopleRows(biko, tambo);
 
